@@ -48,13 +48,13 @@ git clone https://github.com/saini01sandeep/HTTPxRay.git
 cd HTTPxRay
 2. Install dependencies
 pip install requests
+python3 httpxray.py
 ```
 💻 Usage
 Run the tool using Python:
 ```
 python3 httpxray.py
 When prompted:
-
 Enter website URL or domain (e.g. example.com or https://example.com):
 Provide the full or partial URL — the tool will normalize it for you.
 
