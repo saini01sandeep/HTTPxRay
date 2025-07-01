@@ -1,63 +1,65 @@
-# HTTPxRay
+# 🔎 HTTPxRay
 
-🔎 HTTPxRay
-HTTPxRay is a Python-based utility designed to inspect and audit HTTP headers and test all major HTTP methods against a target website. It helps in web reconnaissance and security assessments by giving insights into request/response headers, supported HTTP methods, and general server behavior.
+**HTTPxRay** is a Linux-based Python tool designed for **HTTP header analysis** and **method testing**. It fetches request and response headers, reveals server metadata, checks supported HTTP methods, and tests commonly used HTTP verbs like `GET`, `POST`, `PUT`, `DELETE`, and more.
 
-📌 Features
-📤 Display request headers sent to the server.
+> 📌 Created with ❤️ by [saini01sandeep](https://github.com/saini01sandeep) for security researchers, ethical hackers, and penetration testers.
 
-📥 Display response headers received from the server.
+---
 
-🧾 Extract server details such as:
+## 📂 Table of Contents
 
-Status Code
-Content Type
-Server info
-Content Length
-Encoding
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Sample Output](#-sample-output)
+- [License](#-license)
+- [Author](#-author)
+- [Contributing](#-contributing)
 
-🔎 Check supported HTTP methods using the OPTIONS method.
+---
 
-🚀 Test all major HTTP methods:
+## 🚀 Features
 
-GET, POST, PUT, DELETE, OPTIONS, HEAD, TRACE, CONNECT
+- 🌐 Takes a domain or URL and automatically resolves it
+- 📤 Displays **Request Headers** sent
+- 📥 Displays **Response Headers** received
+- 📊 Shows **Server Details**:
+  - Status Code
+  - Content-Type
+  - Server
+  - Content-Length
+  - Encoding
+- 📡 Performs `OPTIONS` request to identify allowed HTTP methods
+- ⚔️ Tests common HTTP methods:
+  - `GET`, `POST`, `PUT`, `DELETE`, `OPTIONS`, `HEAD`, `TRACE`, `CONNECT`
+- 💨 Built for **Linux-based systems**
 
-🛠️ Installation
-This tool works best on Linux-based systems and requires Python 3.x.
+---
 
-✅ Requirements
-Install Python dependencies (only requests module is needed):
+## 🛠️ Installation
 
-bash
-Copy
-Edit
-pip install requests
+> ✅ Requires Python 3.6 or higher  
+> 🧰 Dependency: `requests`
 
-🚀 Usage
+### 1. Clone the repository
 
-1. Clone the repository:
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/saini01sandeep/HTTPxRay.git
 cd HTTPxRay
-2. Run the tool:
-bash
-Copy
-Edit
+2. Install dependencies
+pip install requests
+```
+💻 Usage
+Run the tool using Python:
+```
 python3 httpxray.py
-You will be prompted to enter a URL or domain:
+When prompted:
 
-less
-Copy
-Edit
 Enter website URL or domain (e.g. example.com or https://example.com):
-The tool will handle adding http:// if the scheme is missing.
+Provide the full or partial URL — the tool will normalize it for you.
 
-🧪 Sample Output
-shell
-Copy
-Edit
+📤 Sample Output
+
 🌐 HTTP Header & Method Tester Tool
 🔧============================================================
 🔧        DEVELOPED BY: SAINI01SANDEEP
@@ -81,7 +83,8 @@ Server: ECS (nyb/1D1D)
 Status Code   : 200
 Content Type  : text/html
 Server        : ECS (nyb/1D1D)
-...
+Content Length: 1256
+Encoding      : UTF-8
 
 🔎 Allowed HTTP Methods (via OPTIONS):
 Allow header  : GET, POST, OPTIONS
@@ -89,13 +92,19 @@ Allow header  : GET, POST, OPTIONS
 🚀 Testing Common HTTP Methods:
 [GET]     → Status: 200 | Reason: OK
 [POST]    → Status: 405 | Reason: Method Not Allowed
-[TRACE]   → Status: 501 | Reason: Not Implemented
+[PUT]     → Status: 405 | Reason: Method Not Allowed
 ...
-
+```
 👨‍💻 Author
 Sandeep Saini
 GitHub: saini01sandeep
-Built with ❤️ for ethical hackers, bug bounty hunters, and developers.
 
-📣 Contribution
-Feel free to contribute or suggest improvements via pull requests or issues!
+🤝 Contributing
+Contributions, suggestions, and pull requests are welcome!
+
+🔐 Disclaimer
+This tool is intended for educational and authorized security testing only. Unauthorized use is strictly prohibited.
+
+🪪 License
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
