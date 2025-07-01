@@ -12,9 +12,9 @@
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Sample Output](#-sample-output)
-- [License](#-license)
 - [Author](#-author)
 - [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
@@ -64,9 +64,9 @@ python3 httpxray.py
 When prompted:
 Enter website URL or domain (e.g. example.com or https://example.com):
 Provide the full or partial URL — the tool will normalize it for you.
-
+```
 📤 Sample Output
-
+```
 🌐 HTTP Header & Method Tester Tool
 🔧============================================================
 🔧        DEVELOPED BY: SAINI01SANDEEP
