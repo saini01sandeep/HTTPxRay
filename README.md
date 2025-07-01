@@ -18,7 +18,7 @@
 
 ---
 
-## 🚀 Features
+## 🚀 Features:
 
 - 🌐 Takes a domain or URL and automatically resolves it
 - 📤 Displays **Request Headers** sent
@@ -36,21 +36,28 @@
 
 ---
 
-## 🛠️ Installation
+## 🛠️ Installation:
 
 > ✅ Requires Python 3.6 or higher  
 > 🧰 Dependency: `requests`
 
 ### 1. Clone the repository
 
-```bash
+```
 git clone https://github.com/saini01sandeep/HTTPxRay.git
 cd HTTPxRay
+```
 2. Install dependencies
+```
 pip install requests
+```
+3. Run
+```
 python3 httpxray.py
 ```
-💻 Usage
+
+💻 Usage:
+
 Run the tool using Python:
 ```
 python3 httpxray.py
@@ -93,18 +100,18 @@ Allow header  : GET, POST, OPTIONS
 [GET]     → Status: 200 | Reason: OK
 [POST]    → Status: 405 | Reason: Method Not Allowed
 [PUT]     → Status: 405 | Reason: Method Not Allowed
-...
 ```
-👨‍💻 Author
+👨‍💻 Author:
+```
 Sandeep Saini
 GitHub: saini01sandeep
-
-🤝 Contributing
+```
+🤝 Contributing:
 Contributions, suggestions, and pull requests are welcome!
 
-🔐 Disclaimer
+🔐 Disclaimer:
+```
 This tool is intended for educational and authorized security testing only. Unauthorized use is strictly prohibited.
-
-🪪 License
+```
+🪪 License:
 This project is licensed under the MIT License.
-See the LICENSE file for more details.
