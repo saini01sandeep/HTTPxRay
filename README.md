@@ -2,11 +2,11 @@
 
 **HTTPxRay** is a Linux-based Python tool designed for **HTTP header analysis** and **method testing**. It fetches request and response headers, reveals server metadata, checks supported HTTP methods, and tests commonly used HTTP verbs like `GET`, `POST`, `PUT`, `DELETE`, and more.
 
-> 📌 Created with ❤️ by [saini01sandeep](https://github.com/saini01sandeep) for security researchers, ethical hackers, and penetration testers.
+>  Created with by [saini01sandeep](https://github.com/saini01sandeep) for security researchers, ethical hackers, and penetration testers.
 
 ---
 
-## 📂 Table of Contents
+## Table of Contents
 
 - [Features](#-features)
 - [Installation](#-installation)
@@ -18,28 +18,28 @@
 
 ---
 
-## 🚀 Features:
+## Features:
 
-- 🌐 Takes a domain or URL and automatically resolves it
-- 📤 Displays **Request Headers** sent
-- 📥 Displays **Response Headers** received
-- 📊 Shows **Server Details**:
+-  Takes a domain or URL and automatically resolves it
+-  Displays **Request Headers** sent
+-  Displays **Response Headers** received
+-  Shows **Server Details**:
   - Status Code
   - Content-Type
   - Server
   - Content-Length
   - Encoding
-- 📡 Performs `OPTIONS` request to identify allowed HTTP methods
-- ⚔️ Tests common HTTP methods:
+-  Performs `OPTIONS` request to identify allowed HTTP methods
+-  Tests common HTTP methods:
   - `GET`, `POST`, `PUT`, `DELETE`, `OPTIONS`, `HEAD`, `TRACE`, `CONNECT`
-- 💨 Built for **Linux-based systems**
+-  Built for **Linux-based systems**
 
 ---
 
-## 🛠️ Installation:
+## Installation:
 
-> ✅ Requires Python 3.6 or higher  
-> 🧰 Dependency: `requests`
+>  Requires Python 3.6 or higher  
+>  Dependency: `requests`
 
 ### 1. Clone the repository
 
@@ -56,7 +56,7 @@ pip install requests
 python3 httpxray.py
 ```
 
-💻 Usage:
+Usage:
 
 Run the tool using Python:
 ```
@@ -65,53 +65,53 @@ When prompted:
 Enter website URL or domain (e.g. example.com or https://example.com):
 Provide the full or partial URL — the tool will normalize it for you.
 ```
-📤 Sample Output
+ Sample Output
 ```
-🌐 HTTP Header & Method Tester Tool
-🔧============================================================
-🔧        DEVELOPED BY: SAINI01SANDEEP
-🔧============================================================
+ HTTP Header & Method Tester Tool
+============================================================
+        DEVELOPED BY: SAINI01SANDEEP
+============================================================
 
 Enter website URL or domain (e.g. example.com or https://example.com): example.com
 
-🔍 Target URL: http://example.com
+ Target URL: http://example.com
 
-📤 Request Headers Sent:
+Request Headers Sent:
 User-Agent: Mozilla/5.0 ...
 Accept: */*
 ...
 
-📥 Response Headers Received:
+Response Headers Received:
 Content-Type: text/html; charset=UTF-8
 Server: ECS (nyb/1D1D)
 ...
 
-🧾 General Information:
+General Information:
 Status Code   : 200
 Content Type  : text/html
 Server        : ECS (nyb/1D1D)
 Content Length: 1256
 Encoding      : UTF-8
 
-🔎 Allowed HTTP Methods (via OPTIONS):
+Allowed HTTP Methods (via OPTIONS):
 Allow header  : GET, POST, OPTIONS
 
-🚀 Testing Common HTTP Methods:
+Testing Common HTTP Methods:
 [GET]     → Status: 200 | Reason: OK
 [POST]    → Status: 405 | Reason: Method Not Allowed
 [PUT]     → Status: 405 | Reason: Method Not Allowed
 ```
-👨‍💻 Author:
+Author:
 ```
 Sandeep Saini
 GitHub: saini01sandeep
 ```
-🤝 Contributing:
+Contributing:
 Contributions, suggestions, and pull requests are welcome!
 
-🔐 Disclaimer:
+Disclaimer:
 ```
 This tool is intended for educational and authorized security testing only. Unauthorized use is strictly prohibited.
 ```
-🪪 License:
+License:
 This project is licensed under the MIT License.
